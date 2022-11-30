@@ -15,9 +15,18 @@ import {Component} from '@angular/core'
 // Data binding
 
 export class HelloComponent {
+  name = "Test"
   // for interpolation
   user = {
     name: `Nguyen Bao`,
     age: 21
+  }
+
+  // data binding
+  inputType = 'text'
+
+  // event binding
+  addName(event: any){
+    console.log("add", event)
   }
 }

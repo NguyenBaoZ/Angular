@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloComponent } from '../hello/hello.component';
 import { HiComponent } from './hi/hi.component';
+import { FormsModule } from '@angular/forms';
 
 // TS decorator
 @NgModule({
@@ -17,7 +18,8 @@ import { HiComponent } from './hi/hi.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [HelloComponent]

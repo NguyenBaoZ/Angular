@@ -14,4 +14,13 @@
     attributes: [],
   }
 -->
-<input type = "text">
+<!-- Property binding -->
+<input [type] = "inputType" [value] = "user.name" />
+
+<!-- Event binding -->
+<button type = "button" (click) = "addName($event)">Add Name</button>
+<br><br>
+
+<!-- Two way data binding -->
+<!-- <input type="text" [ngModel]="user.name" (ngModelChange)="user.name = $event" /> -->
+<input type="text" [(ngModel)]="user.name" />
