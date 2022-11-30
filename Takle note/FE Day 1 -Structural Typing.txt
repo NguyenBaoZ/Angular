@@ -1,0 +1,9 @@
+Structural typing:
+- A compatible B if B B contains all attribute of A
+- Example: A {a, b} B {a,b, c}
+	+ Can: A : B (B contains all attribute of A)
+	+ Error: B : A (A doesn't B contain all attribute of B) -> throw error: attribute c is missing
+- Tuy nhiên cx có trường hợp error khác là khi lấy từng thuộc tính của class thì khi thực hiện vòng for cho từng thuộc tính 
+(kiểu khác string thì sẽ lỗi) do key vị trí phải là int mới lấy được phần tử mảng
+
+
