@@ -19,7 +19,7 @@ export class HelloComponent {
   // for interpolation
   user = {
     name: `Nguyen Bao`,
-    age: 21
+    age: 17
   }
 
   // data binding
