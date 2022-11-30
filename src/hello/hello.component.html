@@ -11,7 +11,10 @@
 <ng-template #noPG18>
   <div>Bạn không thể xem nội dung PG-18</div>
 </ng-template>
-
+<button (click) = "user.age = user.age - 1">-</button>
+Your age: {{ user.age}}
+<button (click) = "user.age = user.age + 1">+</button>
+<br><br>
 <!--Document Object Model DOM-->
 <!--
   HTMLInputElement{

@@ -1,0 +1,51 @@
+<p>List of Author:</p>
+
+
+<!-- <ul>
+  <ng-container *ngIf="authors.length >=0 else noAuthors">
+    <div *ngFor="let author of authors">
+      {{author.id}} - {{author.firstName}} {{author.lastName}}
+    </div>
+
+    <div *ngFor="let author of authors; index as idx; count as total; first as isFirst; last as isLast; even as Even">
+      <div *ngIf="isFirst"> The first author: </div>
+      <div *ngIf="isLast"> The last author: </div>
+      {{author.id}} - {{author.firstName}}
+      {{author.lastName}}
+    </div>
+  </ng-container>
+
+  <ng-template #noAuthors>
+    <div>List rỗng</div>
+  </ng-template>
+</ul> -->
+
+<button *ngFor="let tag of tags; last as isLast" [class.right-margin] = "!isLast">{{tag}}</button>
+
+<!-- Ngtemplate with property binding-->
+<!-- <div>
+  <ng-template ngFor [ngForOf]="authors" let-author let-idx = "index" let-isFirst = "first" let-isLast = "last">
+    <div *ngIf="isFirst"> The first author: </div>
+    <div *ngIf="isLast"> The last author: </div>
+    {{author.id}} - {{author.firstName}}
+    {{author.lastName}}
+  </ng-template>
+</div> -->
+
+<ul>
+  <ng-container *ngIf="authors.length >=0 else noAuthors">
+    <div *ngFor="let author of authors">
+      {{author.id}} - {{author.firstName}} {{author.lastName}}
+    </div>
+
+    <div *ngFor="let author of authors; index as idx; count as total; first as isFirst; last as isLast; even as Even">
+      <div *ngIf="isFirst"> The first author: </div>
+      <div *ngIf="isLast"> The last author: </div>
+      <span>{{author.id}} - {{author.firstName}} {{author.lastName}}</span>
+    </div>
+  </ng-container>
+
+  <ng-template #noAuthors>
+    <div>List rỗng</div>
+  </ng-template>
+</ul>

@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from '../hello/hello.component';
 import { HiComponent } from './hi/hi.component';
 import { FormsModule } from '@angular/forms';
+import { AuthorComponent } from './author/author.component';
 
 // TS decorator
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
-    HiComponent
+    HiComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [HelloComponent]
+  bootstrap: [AuthorComponent]
 })
 export class AppModule { }
