@@ -9,6 +9,10 @@ import { HelloComponent } from '../hello/hello.component';
 import { HiComponent } from './hi/hi.component';
 import { FormsModule } from '@angular/forms';
 import { AuthorComponent } from './author/author.component';
+import { ClassComponent } from './class/class.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { AuthorDetailComponent } from './author-detail/author-detail.component';
+import { AuthorListComponent } from './author-list/author-list.component';
 
 // TS decorator
 @NgModule({
@@ -16,7 +20,11 @@ import { AuthorComponent } from './author/author.component';
     AppComponent,
     HelloComponent,
     HiComponent,
-    AuthorComponent
+    AuthorComponent,
+    ClassComponent,
+    ProgressBarComponent,
+    AuthorDetailComponent,
+    AuthorListComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +32,6 @@ import { AuthorComponent } from './author/author.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AuthorComponent]
+  bootstrap: [HiComponent]
 })
 export class AppModule { }

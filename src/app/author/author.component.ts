@@ -29,4 +29,5 @@ export class AuthorComponent {
   ];
 
   tags = ['app', 'hello', 'author']
+  isTabActive = true
 }
