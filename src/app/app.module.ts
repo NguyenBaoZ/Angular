@@ -23,8 +23,8 @@ import { AuthorListComponent } from './author-list/author-list.component';
     AuthorComponent,
     ClassComponent,
     ProgressBarComponent,
-    AuthorDetailComponent,
-    AuthorListComponent
+    AuthorListComponent,
+    AuthorDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +32,6 @@ import { AuthorListComponent } from './author-list/author-list.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [HiComponent]
+  bootstrap: [AuthorListComponent]
 })
 export class AppModule { }
